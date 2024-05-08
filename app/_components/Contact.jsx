@@ -13,7 +13,7 @@ const Contact = () => {
             alt="robospace"
             height="564"
             width="846"
-            src="/robot-bg.jpg"
+            src="/robot-bg.webp"
             className="absolute inset-0 h-full w-full object-cover opacity-40"
           />
 
