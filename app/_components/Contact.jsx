@@ -37,17 +37,20 @@ const Contact = () => {
             </p>
             <div>
               <div className="mt-4 leading-relaxed text-white/90">
-                <a className="flex" href="tel:+">
+                <a
+                  className="flex"
+                  href="https://maps.app.goo.gl/fnDgH94kCd3wrNLr9"
+                >
                   <MapPin className="mr-1" /> Odaksan Mühendislik - Gaziantep
                 </a>
               </div>
               <div className="mt-4 leading-relaxed text-white/90">
-                <a className="flex" href="tel:+">
+                <a className="flex" href="tel:+90 342 218 02 02">
                   <PhoneCall className="mr-1" /> +90 342 218 02 02
                 </a>
               </div>
               <div className="mt-4 leading-relaxed text-white/90">
-                <a className="flex" href="mailto:">
+                <a className="flex" href="mailto:info@robospace.com">
                   <AtSign className="mr-1" /> info@robospace.com
                 </a>
               </div>
