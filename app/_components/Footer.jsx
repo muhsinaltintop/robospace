@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div className="lg:grid lg:grid-cols-2">
           <div className="border-b border-gray-100 py-8 lg:order-last lg:border-b-0 lg:border-s lg:py-16 lg:ps-16">
-            <div className="block text-teal-600 lg:hidden">
+            <div className="block text-primary lg:hidden">
               <svg
                 className="h-8"
                 viewBox="0 0 118 24"
@@ -58,7 +58,7 @@ const Footer = () => {
             </div>
 
             <div className="mt-8 space-y-4 lg:mt-0">
-              <span className="hidden h-1 w-10 rounded bg-teal-500 lg:block"></span>
+              <span className="hidden h-1 w-10 rounded bg-primary lg:block"></span>
 
               <div>
                 <h2 className="text-2xl font-medium text-gray-900">
@@ -86,7 +86,7 @@ const Footer = () => {
                     className="w-full border-none focus:border-transparent focus:ring-transparent sm:text-sm"
                   />
 
-                  <button className="mt-1 w-full rounded bg-teal-500 px-6 py-3 text-sm font-bold uppercase tracking-wide text-white transition-none hover:bg-teal-600 sm:mt-0 sm:w-auto sm:shrink-0">
+                  <button className="mt-1 w-full rounded bg-primary px-6 py-3 text-sm font-bold uppercase tracking-wide text-white transition-none hover:bg-gray-600 sm:mt-0 sm:w-auto sm:shrink-0">
                     Gönder
                   </button>
                 </div>
@@ -98,7 +98,12 @@ const Footer = () => {
             <div className="hidden text-teal-600 lg:block">
               <a className="block text-primary" href="#">
                 <span className="sr-only">Home</span>
-                <Image src="/robo-space-logo.png" width={300} height={300} />
+                <Image
+                  alt="robospace-logo"
+                  src="/robo-space-logo.png"
+                  width={300}
+                  height={300}
+                />
               </a>
             </div>
 

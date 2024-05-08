@@ -22,7 +22,12 @@ const Header = () => {
         <div className="md:flex md:items-center md:gap-12">
           <a className="block text-primary" href="#">
             <span className="sr-only">Home</span>
-            <Image src="/robo-space-logo.png" width={300} height={300} />
+            <Image
+              alt="robospace-logo"
+              src="/robo-space-logo.png"
+              width={300}
+              height={300}
+            />
           </a>
         </div>
 
