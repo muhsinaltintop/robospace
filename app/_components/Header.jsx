@@ -24,7 +24,9 @@ const Header = () => {
             <span className="sr-only">Home</span>
             <Image
               alt="robospace-logo"
-              src="/robo-space-logo.png"
+              src={
+                "https://res.cloudinary.com/dk3zfjoii/image/upload/v1715722996/robo_space_logo_5aca1d93e8.png"
+              }
               width={300}
               height={300}
             />
