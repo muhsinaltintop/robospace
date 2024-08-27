@@ -3,8 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 const menu = [
   { label: "Anasayfa", href: "/" },
-  { label: "Hakkımızda", href: "/hakkımızda" },
-  { label: "Ürünler", href: "/ürünler" },
+  { label: "Hakkımızda", href: "/hakkimizda" },
+  { label: "Ürünler", href: "/urunler" },
   { label: "Blog", href: "/blog" },
   { label: "İletişim", href: "/iletisim" },
 ];
@@ -25,7 +25,7 @@ const Header = () => {
             <Image
               alt="robospace-logo"
               src={
-                "https://res.cloudinary.com/dk3zfjoii/image/upload/v1715722996/robo_space_logo_5aca1d93e8.png"
+                "/robo-space-logo.png"
               }
               width={300}
               height={300}
