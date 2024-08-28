@@ -1,5 +1,7 @@
 import Image from "next/image";
 import React from "react";
+import Logo from "./Logo";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -96,15 +98,10 @@ const Footer = () => {
 
           <div className="py-8 lg:py-16 lg:pe-16">
             <div className="hidden text-teal-600 lg:block">
-              <a className="block text-primary" href="#">
+              <Link className="block text-primary" href="#">
                 <span className="sr-only">Home</span>
-                <Image
-                  alt="robospace-logo"
-                  src="/robo-space-logo.png"
-                  width={300}
-                  height={300}
-                />
-              </a>
+                <Logo/>
+              </Link>
             </div>
 
             <div className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-3">

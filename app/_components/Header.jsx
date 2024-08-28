@@ -1,6 +1,7 @@
 import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import Logo from "./Logo";
 const menu = [
   { label: "Anasayfa", href: "/" },
   { label: "Hakkımızda", href: "/hakkimizda" },
@@ -20,30 +21,23 @@ const Header = () => {
     <div className="relative mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 z-10 mb-8">
       <div className="flex h-16 items-center justify-between pt-8">
         <div className="md:flex md:items-center md:gap-12">
-          <a className="block text-primary" href="#">
+          <Link className="block text-primary" href="#">
             <span className="sr-only">Home</span>
-            <Image
-              alt="robospace-logo"
-              src={
-                "/robo-space-logo.png"
-              }
-              width={300}
-              height={300}
-            />
-          </a>
+            <Logo/>
+          </Link>
         </div>
 
         <div className="hidden md:block">
           <nav aria-label="Global">
-            <ul className="flex items-center gap-6 text-sm">
+            <ul className="flex items-center gap-3 text-sm">
               {menu.map(({ label, href }) => (
-                <li key={label}>
-                  <a
-                    className="text-gray-500 transition hover:text-gray-500/75"
+                <li key={label} className="font-bold text-lg bg-primary px-3 py-1 rounded-md hover:bg-white">
+                  <Link
+                    className="text-white transition hover:text-primary"
                     href={href}
                   >
                     {label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

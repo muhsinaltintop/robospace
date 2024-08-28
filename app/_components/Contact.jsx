@@ -80,12 +80,11 @@ const Contact = () => {
               </Link>
 
               <h1 className="mt-2 text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl">
-                Welcome to Health Services 🩺
+              RoboSpace 🤖
               </h1>
 
               <p className="mt-4 leading-relaxed text-gray-500">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Eligendi nam dolorum aliquam, quibusdam aperiam voluptatum.
+              Temiz enerji için temiz güneş panelleri.
               </p>
             </div>
             <div className="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
@@ -145,7 +144,7 @@ const Contact = () => {
                         name="option"
                       />
 
-                      <span className="text-sm"> Model 1 </span>
+                      <span className="text-sm"> PLT 120 </span>
                     </label>
                   </div>
 
@@ -164,7 +163,7 @@ const Contact = () => {
                         name="option"
                       />
 
-                      <span className="text-sm"> Model-2 </span>
+                      <span className="text-sm"> PLT 90 </span>
                     </label>
                   </div>
 
@@ -183,7 +182,7 @@ const Contact = () => {
                         name="option"
                       />
 
-                      <span className="text-sm"> Model 3 </span>
+                      <span className="text-sm"> PLT 75 </span>
                     </label>
                   </div>
                 </div>
