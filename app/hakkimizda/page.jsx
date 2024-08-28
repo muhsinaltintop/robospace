@@ -34,7 +34,7 @@ const Page = () => {
   return (
     <div className="flex">
       {/* Sol Menü */}
-      <SideMenu onMenuClick={handleMenuClick} />
+      <SideMenu variation="about" onMenuClick={handleMenuClick} />
 
       {/* Sağ Taraf Dinamik İçerik */}
       <div className="flex-1 p-10">

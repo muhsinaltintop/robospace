@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
 
-const SideMenu = ({ onMenuClick }) => {
+const SideMenu = ({ onMenuClick, variation }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -56,6 +56,8 @@ const SideMenu = ({ onMenuClick }) => {
           )}
 
           <div className="px-4 py-6">
+            {variation === "about" ? 
+            (<div>          
             <span className="grid h-10 w-32 place-content-center rounded-lg bg-gray-100 text-xs text-gray-600">
               <Image
                 src="/robo-space-logo.png"
@@ -110,6 +112,60 @@ const SideMenu = ({ onMenuClick }) => {
                 </button>
               </li>
             </ul>
+            </div>) : variation === "products" ? (<div>          
+            
+            <span className="bg-primary font-bold mt-1">
+             <h2 className="bg-primary font bold text-lg text-white px-4 py-1 rounded-lg w-fit">Ürünler</h2> 
+            </span>
+
+            <ul className="mt-6 space-y-1">
+              <li>
+                <button
+                  onClick={() => onMenuClick('odaksan')}
+                  className="block w-full text-left rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-200"
+                >
+                  <div className="flex">
+                  <span>
+                  RoboSpace PLT 120 
+                  </span>
+                  <span className="ml-2"><Image src="/plt-120-860-500.png" width="40" height="20"/> </span>
+                  </div>
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => onMenuClick('vision')}
+                  className="block w-full text-left rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-200"
+                >
+                  RoboSpace PLT 90
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => onMenuClick('mission')}
+                  className="block w-full text-left rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-200"
+                >
+                   RoboSpace PLT 75
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => onMenuClick('quality')}
+                  className="block w-full text-left rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-200"
+                >
+                  RoboSpace PLT ECO
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => onMenuClick('production')}
+                  className="block w-full text-left rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-200"
+                >
+                  Üretimlerimiz
+                </button>
+              </li>
+            </ul>
+            </div>): ""}
           </div>
 
           <div className="sticky inset-x-0 bottom-0 border-t border-gray-100">
