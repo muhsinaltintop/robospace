@@ -6,7 +6,12 @@ const SingleProduct = ({image, name, detay}) => {
   return (
     <div className='max-w-96 border-2'>
 
-    <Link href="#" className="group relative block overflow-hidden">
+    <Link href={`/urunler/${name.toLowerCase()
+    .replace(/\s+/g, '-')
+    .replace(/[^\w\-]+/g, '')
+    .replace(/\-\-+/g, '-')
+    .trim()
+    }`} className="group relative block overflow-hidden">
   <Image
     src={image}
     alt=""
