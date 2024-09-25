@@ -121,39 +121,67 @@ const SideMenu = ({ onMenuClick, variation }) => {
             <ul className="mt-6 space-y-1">
               <li>
                 <button
-                  onClick={() => onMenuClick('odaksan')}
+                  onClick={() => onMenuClick('/urunler/pro-120')}
                   className="block w-full text-left rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-200"
                 >
                   <div className="flex">
                   <span>
-                  RoboSpace PLT 120 
+                  RoboSpace PRO 120 
                   </span>
-                  <span className="ml-2"><Image src="/plt-120-860-500.png" width="40" height="20"/> </span>
+                  <span className="ml-2"><Image src="/pro-120-860-500.png" width="40" height="20" alt="Solar Panel Yıkama Robotu"/> </span>
                   </div>
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => onMenuClick('vision')}
+                  onClick={() => onMenuClick('/urunler/pro-90')}
                   className="block w-full text-left rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-200"
                 >
-                  RoboSpace PLT 90
+                 <div className="flex">
+                  <span>
+                  RoboSpace PRO 90 
+                  </span>
+                  <span className="ml-2"><Image src="/pro-75-90-860-500.png" width="40" height="20" alt="Solar Panel Yıkama Robotu"/> </span>
+                  </div>
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => onMenuClick('mission')}
+                  onClick={() => onMenuClick('/urunler/pro-75')}
                   className="block w-full text-left rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-200"
                 >
-                   RoboSpace PLT 75
+                   <div className="flex">
+                  <span>
+                  RoboSpace PRO 75
+                  </span>
+                  <span className="ml-2"><Image src="/pro-120-860-500.png" width="40" height="20" alt="Solar Panel Yıkama Robotu"/> </span>
+                  </div>
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => onMenuClick('quality')}
+                  onClick={() => onMenuClick('/urunler/adv-120')}
                   className="block w-full text-left rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-200"
                 >
-                  RoboSpace PLT ECO
+                  <div className="flex">
+                  <span>
+                  RoboSpace ADV 120 
+                  </span>
+                  <span className="ml-2"><Image src="/adv-120.png" width="40" height="20" alt="Solar Panel Yıkama Robotu"/> </span>
+                  </div>
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => onMenuClick('/urunler/adv-80')}
+                  className="block w-full text-left rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-200"
+                >
+                  <div className="flex">
+                  <span>
+                  RoboSpace ADV 80
+                  </span>
+                  <span className="ml-2"><Image src="/adv-80.png" width="40" height="20" alt="Solar Panel Yıkama Robotu"/> </span>
+                  </div>
                 </button>
               </li>
               <li>

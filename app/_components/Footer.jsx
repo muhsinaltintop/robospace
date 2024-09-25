@@ -110,48 +110,48 @@ const Footer = () => {
 
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      href="/urunler/pro-120"
                       className="text-gray-700 transition hover:opacity-75"
                     >
-                      Robospace 1
-                    </a>
+                      Robospace PRO 120
+                    </Link>
                   </li>
 
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      href="/urunler/pro-90"
                       className="text-gray-700 transition hover:opacity-75"
                     >
-                      Robospace 2
-                    </a>
+                      Robospace PRO 90
+                    </Link>
                   </li>
 
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      href="/urunler/pro-75"
                       className="text-gray-700 transition hover:opacity-75"
                     >
-                      Streç Makinesi 1
-                    </a>
+                      Robospace PRO 75
+                    </Link>
                   </li>
 
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      href="/urunler/adv-120"
                       className="text-gray-700 transition hover:opacity-75"
                     >
-                      Streç Makinesi 2
-                    </a>
+                      Robospace ADV 120
+                    </Link>
                   </li>
 
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      href="/urunler/adv-80"
                       className="text-gray-700 transition hover:opacity-75"
                     >
-                      SEO Optimisation
-                    </a>
+                      Robospace ADV 80
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -161,30 +161,30 @@ const Footer = () => {
 
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
-                    <a
+                    <Link
                       href="#"
                       className="text-gray-700 transition hover:opacity-75"
                     >
                       Hakkımızda
-                    </a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a
+                    <Link
                       href="#"
                       className="text-gray-700 transition hover:opacity-75"
                     >
                       Streç Makinası
-                    </a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a
+                    <Link
                       href="#"
                       className="text-gray-700 transition hover:opacity-75"
                     >
                       Referanslarımız
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -194,30 +194,30 @@ const Footer = () => {
 
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
-                    <a
+                    <Link
                       href="#"
                       className="text-gray-700 transition hover:opacity-75"
                     >
                       İletişim
-                    </a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a
+                    <Link
                       href="#"
                       className="text-gray-700 transition hover:opacity-75"
                     >
                       SSS
-                    </a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a
+                    <Link
                       href="#"
                       className="text-gray-700 transition hover:opacity-75"
                     >
                       Demo Talebi
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -226,30 +226,30 @@ const Footer = () => {
             <div className="mt-8 border-t border-gray-100 pt-8">
               <ul className="flex flex-wrap gap-4 text-xs">
                 <li>
-                  <a
+                  <Link
                     href="#"
                     className="text-gray-500 transition hover:opacity-75"
                   >
                     Şartlar ve Koşullar
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
+                  <Link
                     href="#"
                     className="text-gray-500 transition hover:opacity-75"
                   >
                     Gizlilik Politikası
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
+                  <Link
                     href="#"
                     className="text-gray-500 transition hover:opacity-75"
                   >
                     Çerezler
-                  </a>
+                  </Link>
                 </li>
               </ul>
 

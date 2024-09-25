@@ -21,7 +21,7 @@ const Header = () => {
     <div className="relative mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 z-10 mb-8">
       <div className="flex h-16 items-center justify-between pt-8">
         <div className="md:flex md:items-center md:gap-12">
-          <Link className="block text-primary" href="#">
+          <Link className="block text-primary" href="/">
             <span className="sr-only">Home</span>
             <Logo/>
           </Link>

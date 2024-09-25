@@ -1,0 +1,44 @@
+[
+
+    {
+        "id": 1,
+        "productName": "PRO 75",
+        "productDescription": "Paletli 75 cm Çift Fırçalı Uzaktan Kumandalı Güneş Paneli Yıkama Robotu",
+        "panelDistance": "50cm"
+
+
+    },
+    {
+        "id": 2,
+        "productName": "PRO 90",
+        "productDescription": "Paletli 90 cm Çift Fırçalı Uzaktan Kumandalı Güneş Paneli Yıkama Robotu",
+        "panelDistance": "25cm"
+        
+
+    },
+    {
+        "id": 3,
+        "productName": "PRO 120",
+        "productDescription": "Paletli 120 cm Çift Fırçalı Uzaktan Kumandalı Güneş Paneli Yıkama Robotu",
+        "panelDistance": "25cm"
+        
+
+    },
+    {
+        "id": 4,
+        "productName": "ADV 80",
+        "productDescription": "Paletli 80 cm Tek Fırçalı Uzaktan Kumandalı Güneş Paneli Yıkama Robotu",
+        "panelDistance": "25cm"
+        
+
+    },
+    {
+        "id": 5,
+        "productName": "ADV 120",
+        "productDescription": "Paletli 120 cm Tek Fırçalı Uzaktan Kumandalı Güneş Paneli Yıkama Robotu",
+        "panelDistance": "25cm"
+        
+
+    }
+
+]
