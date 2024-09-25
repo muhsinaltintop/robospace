@@ -68,10 +68,7 @@ const Footer = () => {
                 </h2>
 
                 <p className="mt-4 max-w-lg text-gray-500">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Veritatis, harum deserunt nesciunt praesentium, repellendus
-                  eum perspiciatis ratione pariatur a aperiam eius numquam
-                  doloribus asperiores sunt.
+                  Son teknoloji Solar Panel Yıkama Robotları Robosapce modellerinden sizin için uygun olanını beraber belirleyelim ve sahada birlikte testini yapalım.
                 </p>
               </div>
 

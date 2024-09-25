@@ -14,9 +14,7 @@ const Specifications = () => {
           </h2>
 
           <p className="mt-4 text-gray-300">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-            dolores iure fugit totam iste obcaecati. Consequatur ipsa quod ipsum
-            sequi culpa delectus, cumque id tenetur quibusdam, quos fuga minima.
+          Gelişmiş teknolojisi ve üstün mühendislik çözümleriyle tasarlanan solar panel temizlik robotu, verimliliğinizi artırmak ve operasyonel maliyetlerinizi düşürmek için ideal bir çözümdür. Hafif ve dayanıklı yapısından hassas temizleme fırçalarına kadar her detayıyla profesyonel ihtiyaçlarınızı karşılayacak şekilde üretilen bu robot, en zorlu koşullarda dahi sorunsuz çalışarak uzun ömürlü kullanım sunar. Yüksek performansı, kullanıcı dostu kontrol özellikleri ve uzun süreli batarya kapasitesi sayesinde temizlik operasyonlarınızı en üst düzeye çıkarın.
           </p>
         </div>
 
@@ -30,9 +28,7 @@ const Specifications = () => {
               <h2 className="text-lg font-bold">Hafif Alüminyum Gövde</h2>
 
               <p className="mt-1 text-sm text-gray-300">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-                cumque tempore est ab possimus quisquam reiciendis tempora
-                animi! Quaerat, saepe?
+              Solar temizleme robotu, dayanıklı ve hafif alüminyum gövdesi sayesinde hem kolay taşınabilir hem de yüksek manevra kabiliyetine sahiptir. Paslanmaya karşı dirençli yapısıyla uzun ömürlü kullanım sunar, böylece bakım maliyetlerinizi minimuma indirir.
               </p>
             </div>
           </div>
@@ -46,9 +42,7 @@ const Specifications = () => {
               <h2 className="text-lg font-bold">Elektrostatik Boya</h2>
 
               <p className="mt-1 text-sm text-gray-300">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-                cumque tempore est ab possimus quisquam reiciendis tempora
-                animi! Quaerat, saepe?
+              Elektrostatik kaplama teknolojisi, robotun yüzeyinde üstün koruma sağlar ve çevresel koşullara karşı dayanıklılığı artırır. Bu özel kaplama, UV ışınlarına, yağmur ve toza karşı ekstra koruma sunarak cihazın ömrünü uzatır.
               </p>
             </div>
           </div>
@@ -62,9 +56,7 @@ const Specifications = () => {
               <h2 className="text-lg font-bold">50cm Aralığa Kadar Panelden Panele Geçişlere Uygun Mekanik Yapı</h2>
 
               <p className="mt-1 text-sm text-gray-300">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-                cumque tempore est ab possimus quisquam reiciendis tempora
-                animi! Quaerat, saepe?
+              50 cm aralığa kadar esnek mekanik yapısıyla solar temizleme robotu, panelden panale rahatça geçebilir. Bu özelliği sayesinde temizlik işlemleri daha hızlı ve verimli bir şekilde gerçekleşir.
               </p>
             </div>
           </div>
@@ -78,9 +70,7 @@ const Specifications = () => {
               <h2 className="text-lg font-bold">75 Metreye Kadar Etkili Endüstriyel Uzaktan Kumanda</h2>
 
               <p className="mt-1 text-sm text-gray-300">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-                cumque tempore est ab possimus quisquam reiciendis tempora
-                animi! Quaerat, saepe?
+              Robotunuzu 75 metre mesafeden dahi tam kontrol edebilmenizi sağlayan endüstriyel uzaktan kumanda, operasyonel esnekliği ve güvenliği artırır. İster yakından ister uzaktan, temizlik operasyonlarınızı sorunsuz yönetebilirsiniz.
               </p>
             </div>
           </div>
@@ -94,9 +84,7 @@ const Specifications = () => {
               <h2 className="text-lg font-bold">Panel Yüzeylerini Çizmeden Hassas Temizlik Yapabilen İthal Fırçalar</h2>
 
               <p className="mt-1 text-sm text-gray-300">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-                cumque tempore est ab possimus quisquam reiciendis tempora
-                animi! Quaerat, saepe?
+              Robot, yüksek kaliteli ithal fırçaları sayesinde panel yüzeylerinde çizik oluşturmaz ve optimum temizlik sağlar. Hassas yapılı fırçalar, en zorlu kir ve toz birikintilerini dahi güvenli bir şekilde temizler.
               </p>
             </div>
           </div>
@@ -110,9 +98,7 @@ const Specifications = () => {
               <h2 className="text-lg font-bold">Ayarlanabilir Yürüme ve Fırça Hız</h2>
 
               <p className="mt-1 text-sm text-gray-300">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-                cumque tempore est ab possimus quisquam reiciendis tempora
-                animi! Quaerat, saepe?
+              Ayarlanabilir yürüme ve fırça hızı özellikleri ile farklı yüzeyler ve temizlik ihtiyaçlarına göre hız optimizasyonu yapabilirsiniz. Bu, hem enerji tasarrufu sağlar hem de temizlik kalitesini artırır.
               </p>
             </div>
           </div>
@@ -125,9 +111,7 @@ const Specifications = () => {
               <h2 className="text-lg font-bold">Eğimli Yüzeylerde Rotadan Şaşmadan Düz İlerlemeyi Sağlayan &quot;Rota Stabilizasyon Sistemi&quot;</h2>
 
               <p className="mt-1 text-sm text-gray-300">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-                cumque tempore est ab possimus quisquam reiciendis tempora
-                animi! Quaerat, saepe?
+              Rota stabilizasyon sistemi, robotun eğimli ve zorlu yüzeylerde dahi rotasından sapmadan doğru ilerlemesini sağlar. Bu sayede dik yüzeylerde bile güvenli ve etkili temizlik yapılabilir.
               </p>
             </div>
           </div>
@@ -140,9 +124,7 @@ const Specifications = () => {
               <h2 className="text-lg font-bold">Silikon Palet Yapısı ile Panellere Daha Yumuşak</h2>
 
               <p className="mt-1 text-sm text-gray-300">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-                cumque tempore est ab possimus quisquam reiciendis tempora
-                animi! Quaerat, saepe?
+              Silikon paletler, panellere daha yumuşak temas ederek aşınma ve hasar riskini minimuma indirir. Bu palet yapısı, yüksek performanslı temizlik sağlarken panellerin ömrünü de uzatır.
               </p>
             </div>
           </div><div className="flex items-start gap-4">
@@ -154,9 +136,7 @@ const Specifications = () => {
               <h2 className="text-lg font-bold">Kaymayan ve Uzun Ömürlü Baskı</h2>
 
               <p className="mt-1 text-sm text-gray-300">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-                cumque tempore est ab possimus quisquam reiciendis tempora
-                animi! Quaerat, saepe?
+              Özel olarak tasarlanmış kaymaz ve uzun ömürlü baskı, robotun her türlü hava koşulunda güvenli bir şekilde hareket etmesini sağlar. Bu, performans kaybı yaşanmadan uzun süreli kullanımı mümkün kılar.
               </p>
             </div>
           </div><div className="flex items-start gap-4">
@@ -168,9 +148,7 @@ const Specifications = () => {
               <h2 className="text-lg font-bold">Yedek Lityum Bataryalar ile 9 Saate Varan Durmadan Çalışma Süreleri</h2>
 
               <p className="mt-1 text-sm text-gray-300">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-                cumque tempore est ab possimus quisquam reiciendis tempora
-                animi! Quaerat, saepe?
+              Yüksek kapasiteli lityum bataryalar sayesinde robotunuz 9 saate kadar durmaksızın çalışabilir. Yedek batarya opsiyonuyla daha uzun süreli operasyonlar için kesintisiz bir temizlik deneyimi sunar.
               </p>
             </div>
           </div><div className="flex items-start gap-4">
@@ -182,9 +160,7 @@ const Specifications = () => {
               <h2 className="text-lg font-bold">4&quot; Dokunmatik Panel (PLT Serisi) </h2>
 
               <p className="mt-1 text-sm text-gray-300">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-                cumque tempore est ab possimus quisquam reiciendis tempora
-                animi! Quaerat, saepe?
+              Gelişmiş 4&quot; dokunmatik ekranı ile PLT serisi, kullanıcı dostu bir arayüz sunar. Kolayca kontrol edilebilen bu ekran sayesinde robotunuzun tüm işlevlerine hızlıca erişebilir, temizlik modlarını anında ayarlayabilirsiniz.
               </p>
             </div>
           </div><div className="flex items-start gap-4">
@@ -196,9 +172,7 @@ const Specifications = () => {
               <h2 className="text-lg font-bold">Mekanik Darbelere Karşı, Motor Koruma Sistemi</h2>
 
               <p className="mt-1 text-sm text-gray-300">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-                cumque tempore est ab possimus quisquam reiciendis tempora
-                animi! Quaerat, saepe?
+              Robotun motoru, mekanik darbelere karşı özel olarak tasarlanmış bir koruma sistemi ile donatılmıştır. Bu sistem, uzun ömürlü ve sorunsuz bir kullanım sağlayarak robotun en zorlu şartlarda bile yüksek performans göstermesini garantiler.
               </p>
             </div>
           </div>
