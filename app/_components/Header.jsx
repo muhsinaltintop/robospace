@@ -11,8 +11,8 @@ const menu = [
 ];
 
 const social = [
-  { label: "Facebook", href: "#", icon: <Facebook /> },
-  { label: "Instagram", href: "#", icon: <Instagram /> },
+  { label: "Facebook", href: "https://www.facebook.com/profile.php?id=61559182716924", icon: <Facebook /> },
+  { label: "Instagram", href: "https://www.instagram.com/solar_robospace", icon: <Instagram /> },
   { label: "Youtube", href: "#", icon: <Youtube /> },
   { label: "LinkedIn", href: "#", icon: <Linkedin /> },
 ];

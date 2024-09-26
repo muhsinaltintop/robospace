@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import BreadCrum from '../../_components/BreadCrum';
 import SideMenu from '../../_components/SideMenu';
-import React from 'react'
+import React from 'react';
 import { useRouter } from 'next/navigation';
 import products from '../../../public/products';
 
@@ -11,16 +11,14 @@ const Page = ({params}) => {
   const productName = params.productName.split('-')
   .map(word => word.toUpperCase())
   .join(' ');
-
-  console.log(params.productName);
   
   const router = useRouter();
   
   const handleClick = (url) => {
-    router.push(url)
-  }
+    router.push(url);
+  };
 
-  function findProductByNameUsingMap(name) {
+  function findProductByName(name) {
     let foundProduct = null;
     products.map(product => {
         if (product.productName.toLowerCase() === name.toLowerCase()) {
@@ -28,37 +26,41 @@ const Page = ({params}) => {
         }
     });
     return foundProduct;
-}
-const searchResult = findProductByNameUsingMap(productName);
-console.log(searchResult);
-
-  // console.log(foundProduct);
+  }
   
+  const searchResult = findProductByName(productName);
 
   return (
-    <div className="mx-40">
-      <div className="mt-20">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="mt-10 sm:mt-20">
         <BreadCrum productName={productName}/>
       </div>  
-      <div className="flex mt-10">
-      <div className="">
-        <SideMenu variation="products" link={params.productName} onMenuClick={handleClick} />
-      </div>
-      <div className="">
+      <div className="flex flex-col lg:flex-row mt-10">
+        <div className="lg:w-1/4">
+          <SideMenu variation="products" link={params.productName} onMenuClick={handleClick} />
+        </div>
+        <div className="lg:w-3/4 lg:ml-10">
+          <h2 className="text-xl font-bold text-primary mb-4">RoboSpace {searchResult.productName} Panel Yıkama Robotu</h2>
 
-        <h2 className="text-xl font-bold text-primary">RoboSpace {searchResult.productName} Panel Yıkama Robotu</h2>
-        <div className="flex">
-          <div>
-            <div>
+          {/* Görseli mobilde başlığın hemen altına taşıyoruz */}
+          <div className="block lg:hidden mb-6">
+            <Image 
+              src="/pro-75-90-860-500.png" 
+              width={860} 
+              height={500} 
+              className="w-full h-auto" 
+              alt="SolarSpace Panel Yıkama Robotu" 
+            />
+          </div>
+
+          <div className="flex flex-col lg:flex-row">
+            <div className="lg:w-1/2 mb-6 lg:mb-0">
               <p className="text-justify">{searchResult.productDescription}</p>
-              <div>
-            </div>
-            <div className="mt-2">
-              <h3 className="text-l font-bold text-primary">
-                Öne Çıkan Özellikler
-              </h3>
-              <div className="mt-1">
-                <ul className="list-disc list-inside">
+              <div className="mt-4">
+                <h3 className="text-l font-bold text-primary mb-2">
+                  Öne Çıkan Özellikler
+                </h3>
+                <ul className="list-disc list-inside space-y-1">
                   <li>Hafif Alüminyum Gövde, Elektrostatik Boya</li>
                   <li>{searchResult.panelDistance} Aralığa Kadar Panelden Panele Geçişlere Uygun Mekanik Yapı</li>
                   <li>75 Metreye Kadar Etkili Endüstriyel Uzaktan Kumanda</li>
@@ -73,21 +75,21 @@ console.log(searchResult);
               </div>
             </div>
 
-          </div>
-          </div>
-
-          <div>
-            <Image src="/pro-75-90-860-500.png" width="860" height="500" alt="SolarSpace Panel Yıkama Robotu"/>
+            {/* Görseli büyük ekranlarda sağda bırakıyoruz */}
+            <div className="hidden lg:block lg:w-1/2 lg:ml-6">
+              <Image 
+                src="/pro-75-90-860-500.png" 
+                width={860} 
+                height={500} 
+                className="w-full h-auto" 
+                alt="SolarSpace Panel Yıkama Robotu" 
+              />
+            </div>
           </div>
         </div>
       </div>
-
-      
-      </div>
-      
-      
     </div>
-  )
+  );
 }
 
-export default Page
+export default Page;
