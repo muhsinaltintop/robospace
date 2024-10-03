@@ -3,7 +3,8 @@ const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
 
 const fetchData = async (endpoint, options = {}) => {
   const defaultOptions = {
-    cache: "no-store", // 'no-store' yerine 'default' kullanmayı düşünebilirsiniz
+    method: "GET",
+    cache: "no-store", // 'no-store' yerine 'default' kullanılabilir
     headers: {
       "Content-Type": "application/json",
       Authorization: `Bearer ${API_KEY}`,
@@ -16,14 +17,13 @@ const fetchData = async (endpoint, options = {}) => {
   try {
     const res = await fetch(url, finalOptions);
     if (!res.ok) {
-      // API'den dönen hata mesajını loglayın
-      const errorDetail = await res.text(); 
+      // API'den dönen hata detayını loglama
+      const errorDetail = await res.text();
       throw new Error(`Error: ${res.status} ${res.statusText} - ${errorDetail}`);
     }
-    const data = await res.json();
-    return data;
+    return await res.json();
   } catch (error) {
-    console.error("Fetch error:", error);
+    console.error("Fetch error:", error.message);
     throw error;
   }
 };
@@ -38,27 +38,31 @@ const postData = async (endpoint, data, options = {}) => {
     body: JSON.stringify(data),
   };
 
-  
-
   const finalOptions = { ...defaultOptions, ...options };
   const url = `${BASE_URL}${endpoint}`;
 
   try {
     const res = await fetch(url, finalOptions);
     if (!res.ok) {
-      throw new Error(`Error: ${res.status} ${res.statusText}`);
+      // Hata detaylarını yakalamak
+      const errorDetail = await res.text();
+      throw new Error(`Error: ${res.status} ${res.statusText} - ${errorDetail}`);
     }
-    const result = await res.json();
-    return result;
+    return await res.json();
   } catch (error) {
-    console.error("Post error:", error);
+    console.error("Post error:", error.message);
     throw error;
   }
 };
+
 const createInquri = async (inquriData) => {
-  const data = await postData("/inquiries", inquriData);
-  
-  return data.data;
+  try {
+    const data = await postData("/inquiries", inquriData);
+    return data.data;
+  } catch (error) {
+    console.error("Inquiry creation failed:", error.message);
+    throw error;
+  }
 };
 
-export { createInquri };
+export { fetchData, postData, createInquri };

@@ -10,7 +10,8 @@ const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    phoneNumber: "",
+    phone: "",
+    model: "",
     message: "",
   });
 
@@ -104,14 +105,115 @@ const ContactForm = () => {
                       placeholder="Telefon Numarası"
                       type="tel"
                       id="phone"
-                      name="phoneNumber"
-                      value={formData.phoneNumber}
+                      name="phone"
+                      value={formData.phone}
                       onChange={handleChange}
                       required
                     />
                   </div>
                 </div>
-
+                <div className="">
+                  <fieldset className="grid grid-cols-1 gap-4 text-center sm:grid-cols-3">
+                    <legend>
+                      Modeller
+                    </legend>
+                    <div>
+                      <label
+                        htmlFor="pro-120"
+                        className="block w-full cursor-pointer rounded-lg border bg-primary border-gray-200 p-3 text-white hover:border-gray"
+                        tabIndex="0"
+                      >
+                        <input
+                          className="sr-only"
+                          id="pro-120"
+                          type="radio"
+                          name="model"
+                          value="pro-120"
+                          checked={formData.model === "pro-120"}
+                          onChange={handleChange}
+                          tabIndex="-1"
+                        />
+                        <span className="text-sm"> PRO 120 </span>
+                      </label>
+                    </div>
+                    <div>
+                      <label
+                        htmlFor="pro-90"
+                        className="block w-full cursor-pointer rounded-lg border bg-primary border-gray-200 p-3 text-white hover:border-gray"
+                        tabIndex="0"
+                      >
+                        <input
+                          className="sr-only"
+                          id="pro-90"
+                          type="radio"
+                          name="model"
+                          value="pro-90"
+                          checked={formData.model === "pro-90"}
+                          onChange={handleChange}
+                          tabIndex="-1"
+                        />
+                        <span className="text-sm"> PRO 90 </span>
+                      </label>
+                    </div>
+                    <div>
+                      <label
+                        htmlFor="pro-75"
+                        className="block w-full cursor-pointer rounded-lg border bg-primary border-gray-200 p-3 text-white hover:border-gray"
+                        tabIndex="0"
+                      >
+                        <input
+                          className="sr-only"
+                          id="pro-75"
+                          type="radio"
+                          name="model"
+                          value="pro-75"
+                          checked={formData.model === "pro-75"}
+                          onChange={handleChange}
+                          tabIndex="-1"
+                        />
+                        <span className="text-sm"> PRO 75 </span>
+                      </label>
+                    </div>
+                    <div>
+                      <label
+                        htmlFor="adv"
+                        className="block w-full cursor-pointer rounded-lg border bg-primary border-gray-200 p-3 text-white hover:border-gray"
+                        tabIndex="0"
+                      >
+                        <input
+                          className="sr-only"
+                          id="adv-120"
+                          type="radio"
+                          name="model"
+                          value="adv-120"
+                          checked={formData.model === "adv-120"}
+                          onChange={handleChange}
+                          tabIndex="-1"
+                        />
+                        <span className="text-sm"> ADV 120 </span>
+                      </label>
+                    </div>
+                    <div>
+                      <label
+                        htmlFor="adv-80"
+                        className="block w-full cursor-pointer rounded-lg border bg-primary border-gray-200 p-3 text-white hover:border-gray has-[:checked]:border-destructive has-[:checked]:bg-destructive has-[:checked]:text-white"
+                        tabIndex="0"
+                      >
+                        <input
+                          className="sr-only"
+                          id="adv-80"
+                          type="radio"
+                          name="model"
+                          value="adv-80"
+                          checked={formData.model === "adv-80"}
+                          onChange={handleChange}
+                          tabIndex="-1"
+                        />
+                        <span className="text-sm"> ADV 80 </span>
+                      </label>
+                    </div>
+                  </fieldset>
+                </div>
                 <div>
                   <label className="sr-only" htmlFor="message">
                     Mesaj
