@@ -8,7 +8,7 @@ import NewContact from "./NewContact";
 import { createInquri } from "../_utils/GlobalApi";
 
 const Contact = () => {
-  // const pathName = usePathname(); // Router'ı kullanın,
+  const pathName = usePathname(); // Router'ı kullanın,
 
   const router = useRouter(); // useRouter kancasını tanımla
     const checkboxRef = useRef(null);
@@ -37,7 +37,7 @@ const Contact = () => {
     try {
       const createdInquri = await createInquri({ data: formData });
       setSuccess("Enquiry created successfully!");
-      router.push('/thank-you'); // Başarılı gönderimden sonra yönlendirme
+      // router.push('/thank-you'); // Başarılı gönderimden sonra yönlendirme
     } catch (error) {
       setError("Error creating enquiry.");
     } finally {
@@ -59,7 +59,7 @@ const Contact = () => {
                   className="absolute inset-0 h-full w-full object-cover opacity-50" // Arka plandaki fotoğrafın opacity'sini 40% yaptım.
                   />
           <div>
-            {/* {pathName === "/iletisim" ? (
+            {pathName === "/iletisim" ? (
               <div className="bg-white w-full lg:w-96 h-96 ml-4 lg:ml-8 mb-8">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.5430246019637!2d37.43533187630563!3d37.06837165253627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1531e5ae2ee678b1%3A0xaf5e919ed5fc7403!2zT0RBS1NBTiBNw5xIRU5ExLBTTMSwSyBBLsWeLiBTdHJlw6cgU2FybWEgTWFraW5lbGVyaQ!5e0!3m2!1str!2suk!4v1727285171902!5m2!1str!2suk"
@@ -71,7 +71,7 @@ const Contact = () => {
                   referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
               </div>
-            ) : null} */}
+            ) : null}
 
             <div className="hidden lg:relative lg:block lg:p-12">
               <Link className="block text-white" href="/">

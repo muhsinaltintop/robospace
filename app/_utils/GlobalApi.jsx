@@ -148,7 +148,7 @@ const postData = async (endpoint, data, options = {}) => {
   }
 };
 const createInquri = async (inquriData) => {
-  const data = await postData("/inquries", inquriData);
+  const data = await postData("/inquiries", inquriData);
   console.log(inquriData);
   
   return data.data;
