@@ -1,14 +1,53 @@
 "use client";
-import React from "react";
+import React, {useRef, useState} from "react";
 import { MapPin, PhoneCall, AtSign } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
+import NewContact from "./NewContact";
+import { createInquri } from "../_utils/GlobalApi";
 
 const Contact = () => {
-  const pathName = usePathname(); // Router'ı kullanın.
+  const pathName = usePathname(); // Router'ı kullanın,
+
+  const router = useRouter(); // useRouter kancasını tanımla
+    const checkboxRef = useRef(null);
+    const [formData, setFormData] = useState({
+      name: "",
+      email: "",
+      phoneNumber: "",
+      message: "",
+    });
+
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState(null);
+    const [success, setSuccess] = useState(null);
+
+    const handleChange = (e) => {
+      const { name, value } = e.target;
+      setFormData({ ...formData, [name]: value });
+    };
+  
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setError(null);
+    setSuccess(null);
+
+    try {
+      const createdInquri = await createInquri({ data: formData });
+      setSuccess("Enquiry created successfully!");
+      router.push('/thank-you'); // Başarılı gönderimden sonra yönlendirme
+    } catch (error) {
+      setError("Error creating enquiry.");
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
+    <div>
+    <NewContact/>
     <section className="bg-white lg:mx-40 lg:my-10">
       <div className="lg:grid lg:min-h-screen lg:grid-cols-12">
         <section className="relative flex h-32 items-end bg-gray-900 lg:col-span-5 lg:h-full xl:col-span-6">
@@ -94,16 +133,19 @@ const Contact = () => {
             </div>
             <div className="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
               <h2 className="lg:my-20 text-xl">İletişim Formu</h2>
-              <form action="#" className="space-y-4">
+              <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
-                  <label className="sr-only" htmlFor="isim">
+                  <label className="sr-only" htmlFor="name">
                     İsim
                   </label>
                   <input
-                    className="w-full rounded-lg border-gray-200 p-3 text-sm"
                     placeholder="İsim"
                     type="text"
-                    id="isim"
+                    id="name"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
                   />
                 </div>
 
@@ -114,115 +156,143 @@ const Contact = () => {
                     </label>
                     <input
                       className="w-full rounded-lg border-gray-200 p-3 text-sm"
-                      placeholder="Email adresi"
-                      type="email"
-                      id="email"
+                      placeholder="E-mail Adresi"
+                    type="email"
+                    id="email"
+                    name='email'
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
                     />
                   </div>
 
                   <div>
-                    <label className="sr-only" htmlFor="telefon">
+                    <label className="sr-only" htmlFor="phone">
                       Telefon
                     </label>
                     <input
                       className="w-full rounded-lg border-gray-200 p-3 text-sm"
                       placeholder="Telefon Numarası"
-                      type="tel"
-                      id="telefon"
+                      type="mobile-number"
+                      id="phone"
+                      name='phone'
+                      value={formData.phone}
+                      onChange={handleChange}
+                      required
                     />
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 gap-4 text-center sm:grid-cols-3">
-                  <div>
-                    <label
-                      htmlFor="model-1"
-                      className="block w-full cursor-pointer rounded-lg border bg-primary border-gray-200 p-3 text-white hover:border-gray"
-                      tabIndex="0"
-                    >
-                      <input
-                        className="sr-only"
-                        id="pro-120"
-                        type="radio"
-                        tabIndex="-1"
-                        name="option"
-                      />
+                <div className="">
+                  <fieldset className="grid grid-cols-1 gap-4 text-center sm:grid-cols-3">
+                    <legend>
+                      Modeller
+                    </legend>
+                    <div>
+                      <label
+                        htmlFor="pro-120"
+                        className="block w-full cursor-pointer rounded-lg border bg-primary border-gray-200 p-3 text-white hover:border-gray"
+                        tabIndex="0"
+                      >
+                        <input
+                          className="sr-only"
+                          id="pro-120"
+                          type="radio"
+                          name="model"
+                          value="pro-120"
+                          checked={formData.treatment === "pro-120"}
+                          onChange={handleChange}
+                          tabIndex="-1"
+                        />
 
-                      <span className="text-sm"> PRO 120 </span>
-                    </label>
-                  </div>
+                        <span className="text-sm"> PRO 120 </span>
+                      </label>
+                    </div>
 
-                  <div>
-                    <label
-                      htmlFor="model-2"
-                      className="block w-full cursor-pointer rounded-lg border bg-primary border-gray-200 p-3 text-white hover:border-gray"
-                      tabIndex="0"
-                    >
-                      <input
-                        className="sr-only"
-                        id="pro-90"
-                        type="radio"
-                        tabIndex="-1"
-                        name="option"
-                      />
+                    <div>
+                      <label
+                        htmlFor="pro-90"
+                        className="block w-full cursor-pointer rounded-lg border bg-primary border-gray-200 p-3 text-white hover:border-gray"
+                        tabIndex="0"
+                      >
+                        <input
+                          className="sr-only"
+                          id="pro-90"
+                          type="radio"
+                          name="model"
+                          value="pro-90"
+                          checked={formData.treatment === "pro-90"}
+                          onChange={handleChange}
+                          tabIndex="-1"
+                        />
 
-                      <span className="text-sm"> PRO 90 </span>
-                    </label>
-                  </div>
+                        <span className="text-sm"> PRO 90 </span>
+                      </label>
+                    </div>
 
-                  <div>
-                    <label
-                      htmlFor="model-3"
-                      className="block w-full cursor-pointer rounded-lg border bg-primary border-gray-200 p-3 text-white hover:border-gray"
-                      tabIndex="0"
-                    >
-                      <input
-                        className="sr-only"
-                        id="pro-75"
-                        type="radio"
-                        tabIndex="-1"
-                        name="option"
-                      />
+                    <div>
+                      <label
+                        htmlFor="pro-75"
+                        className="block w-full cursor-pointer rounded-lg border bg-primary border-gray-200 p-3 text-white hover:border-gray"
+                        tabIndex="0"
+                      >
+                        <input
+                          className="sr-only"
+                          id="pro-75"
+                          type="radio"
+                          name="model"
+                          value="pro-75"
+                          checked={formData.treatment === "pro-75"}
+                          onChange={handleChange}
+                          tabIndex="-1"
+                        />
 
-                      <span className="text-sm"> PRO 75 </span>
-                    </label>
-                  </div>
+                        <span className="text-sm"> PRO 75 </span>
+                      </label>
+                    </div>
 
-                  <div>
-                    <label
-                      htmlFor="model-3"
-                      className="block w-full cursor-pointer rounded-lg border bg-primary border-gray-200 p-3 text-white hover:border-gray"
-                      tabIndex="0"
-                    >
-                      <input
-                        className="sr-only"
-                        id="adv-120"
-                        type="radio"
-                        tabIndex="-1"
-                        name="option"
-                      />
+                    <div>
+                      <label
+                        htmlFor="adv"
+                        className="block w-full cursor-pointer rounded-lg border bg-primary border-gray-200 p-3 text-white hover:border-gray"
+                        tabIndex="0"
+                      >
+                        <input
+                          className="sr-only"
+                          id="adv-120"
+                          type="radio"
+                          name="model"
+                          value="adv-120"
+                          checked={formData.treatment === "adv-120"}
+                          onChange={handleChange}
+                          tabIndex="-1"
+                        />
 
-                      <span className="text-sm"> ADV 120 </span>
-                    </label>
-                  </div>
+                        <span className="text-sm"> ADV 120 </span>
+                      </label>
+                    </div>
 
-                  <div>
-                    <label
-                      htmlFor="model-3"
-                      className="block w-full cursor-pointer rounded-lg border bg-primary border-gray-200 p-3 text-white hover:border-gray"
-                      tabIndex="0"
-                    >
-                      <input
-                        className="sr-only"
-                        id="adv-80"
-                        type="radio"
-                        tabIndex="-1"
-                        name="option"
-                      />
+                    <div>
+                      <label
+                        htmlFor="adv-80"
+                        className="block w-full cursor-pointer rounded-lg border bg-primary border-gray-200 p-3 text-white hover:border-gray has-[:checked]:border-destructive has-[:checked]:bg-destructive has-[:checked]:text-white"
+                        tabIndex="0"
+                      >
+                        <input
+                          className="sr-only"
+                          id="adv-80"
+                          type="radio"
+                          name="model"
+                          value="adv-80"
+                          checked={formData.treatment === "adv-80"}
+                          onChange={handleChange}
+                          tabIndex="-1"
+                        />
 
-                      <span className="text-sm"> ADV 80 </span>
-                    </label>
-                  </div>
+                        <span className="text-sm"> ADV 80 </span>
+                      </label>
+                    </div>
+                  </fieldset>
                 </div>
 
                 <div>
@@ -234,17 +304,31 @@ const Contact = () => {
                     className="w-full rounded-lg border-gray-200 p-3 text-sm"
                     placeholder="Mesajınız"
                     rows="8"
-                    id="mesaj"
+                    id="message"
+                    name='message'
+                    value={formData.message}
+                    onChange={handleChange}
                   ></textarea>
                 </div>
-
+                <div className="flex items-start mt-3 ">
+              <input
+                type="checkbox"
+                id="permission"
+                ref={checkboxRef}
+                className="h-5 w-5 relative rounded border-gray-300 bg-white shadow-sm mr-2"
+                />
+              <label htmlFor="permission" className="text-center font-light inline-block text-xs text-gray-500 hover:cursor-pointer">
+                Bu formu doldurarak Robospace çalışanlarının sizinle telefonla ve email ile iletişime geçmesine izin vermiş olursunuz. Ayrıca verileriniz anonim olarak işlenerek deneyiminizi iyileştirmek için kullanılacaktır.
+              </label>
+            </div>
                 <div className="m-2">
-                  <a
-                    href="#"
-                    className="w-full cursor-pointer rounded-lg border bg-primary border-gray-200 p-3 text-white hover:border-gray"
+                  <button
+                    type="submit"
+                    className="inline-flex ring-1 px-7 py-2 hover:bg-secondary rounded-lg bg-primary font-medium text-white sm:w-auto"
+                    disabled={!checkboxRef.current?.checked & loading}
                   >
                     Detaylı Bilgi
-                  </a>
+                  </button>
                 </div>
               </form>
             </div>
@@ -252,6 +336,7 @@ const Contact = () => {
         </main>
       </div>
     </section>
+    </div>
   );
 };
 
