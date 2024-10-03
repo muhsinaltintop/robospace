@@ -119,6 +119,7 @@ const fetchData = async (endpoint, options = {}) => {
 //   }
 // };
 
+console.log("BASE_URL:", BASE_URL);
 const postData = async (endpoint, data, options = {}) => {
   const defaultOptions = {
     method: "POST",
@@ -128,6 +129,8 @@ const postData = async (endpoint, data, options = {}) => {
     },
     body: JSON.stringify(data),
   };
+
+  
 
   const finalOptions = { ...defaultOptions, ...options };
   const url = `${BASE_URL}${endpoint}`;
