@@ -200,7 +200,7 @@ const Contact = () => {
                           type="radio"
                           name="model"
                           value="pro-120"
-                          checked={formData.treatment === "pro-120"}
+                          checked={formData.model === "pro-120"}
                           onChange={handleChange}
                           tabIndex="-1"
                         />
@@ -221,7 +221,7 @@ const Contact = () => {
                           type="radio"
                           name="model"
                           value="pro-90"
-                          checked={formData.treatment === "pro-90"}
+                          checked={formData.model === "pro-90"}
                           onChange={handleChange}
                           tabIndex="-1"
                         />
@@ -242,7 +242,7 @@ const Contact = () => {
                           type="radio"
                           name="model"
                           value="pro-75"
-                          checked={formData.treatment === "pro-75"}
+                          checked={formData.model === "pro-75"}
                           onChange={handleChange}
                           tabIndex="-1"
                         />
@@ -263,7 +263,7 @@ const Contact = () => {
                           type="radio"
                           name="model"
                           value="adv-120"
-                          checked={formData.treatment === "adv-120"}
+                          checked={formData.model === "adv-120"}
                           onChange={handleChange}
                           tabIndex="-1"
                         />
@@ -284,7 +284,7 @@ const Contact = () => {
                           type="radio"
                           name="model"
                           value="adv-80"
-                          checked={formData.treatment === "adv-80"}
+                          checked={formData.model === "adv-80"}
                           onChange={handleChange}
                           tabIndex="-1"
                         />
