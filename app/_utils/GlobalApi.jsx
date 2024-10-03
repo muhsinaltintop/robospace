@@ -28,98 +28,6 @@ const fetchData = async (endpoint, options = {}) => {
   }
 };
 
-// const getLogo = async () => {
-//   try {
-//     const data = await fetchData("/logos?populate=*");
-//     return data?.data;
-//   } catch (error) {
-//     console.error("Error fetching logo:", error);
-//     throw error;
-//   }
-// };
-
-// const getSlide = async () => {
-//   try {
-//     const data = await fetchData("/sliders?populate=*");
-//     return data?.data;
-//   } catch (error) {
-//     console.error("Error fetching slide:", error);
-//     throw error;
-//   }
-// };
-
-// const getProperty = async () => {
-//   try {
-//     const data = await fetchData("/properties?populate=*");
-//     return data?.data;
-//   } catch (error) {
-//     console.error("Error fetching property:", error);
-//     throw error;
-//   }
-// };
-
-// const getSingleProperty = async (id) => {
-//   try {
-//     const data = await fetchData(`/properties/${id}?populate=*`);
-//     return data?.data;
-//   } catch (error) {
-//     console.error("Error fetching single property:", error);
-//     throw error;
-//   }
-// };
-
-// const getService = async () => {
-//   try {
-//     const data = await fetchData(`/services?populate=*`);
-//     return data?.data;
-//   } catch (error) {
-//     console.error("Error fetching single property:", error);
-//     throw error;
-//   }
-// };
-
-
-// const getMenu = async () => {
-//   try {
-//     const data = await fetchData(`/menus?populate=*`);
-//     return data?.data;
-//   } catch (error) {
-//     console.error("Error fetching single property:", error);
-//     throw error;
-//   }
-// };
-
-// const getBlogs = async () => {
-//   try {
-//     const data = await fetchData(`/blogs?populate=*`);
-//     return data?.data;
-//   } catch (error) {
-//     console.error("Error fetching single property:", error);
-//     throw error;
-//   }
-// };
-
-// const getSingleBlog = async (blogTitle) => {
-//   try {
-//     const data = await fetchData(`/blogs?filters[title][$eqi]=${blogTitle}&populate=*`);
-//     return data?.data;
-//   } catch (error) {
-//     console.error("Error fetching single property:", error);
-//     throw error;
-//   }
-// };
-
-// const getPartners = async () => {
-//   try {
-//     const data = await fetchData(`/partners?populate=*`);
-//     return data?.data;
-//   } catch (error) {
-//     console.error("Error fetching single property:", error);
-//     throw error;
-//   }
-// };
-
-console.log("BASE_URL:", BASE_URL);
 const postData = async (endpoint, data, options = {}) => {
   const defaultOptions = {
     method: "POST",
@@ -149,7 +57,6 @@ const postData = async (endpoint, data, options = {}) => {
 };
 const createInquri = async (inquriData) => {
   const data = await postData("/inquiries", inquriData);
-  console.log(inquriData);
   
   return data.data;
 };
