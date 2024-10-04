@@ -4,7 +4,7 @@ const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
 const fetchData = async (endpoint, options = {}) => {
   const defaultOptions = {
     method: "GET",
-    cache: "no-store", // 'no-store' yerine 'default' kullanılabilir
+    cache: "no-store",
     headers: {
       "Content-Type": "application/json",
       Authorization: `Bearer ${API_KEY}`,
@@ -17,7 +17,6 @@ const fetchData = async (endpoint, options = {}) => {
   try {
     const res = await fetch(url, finalOptions);
     if (!res.ok) {
-      // API'den dönen hata detayını loglama
       const errorDetail = await res.text();
       throw new Error(`Error: ${res.status} ${res.statusText} - ${errorDetail}`);
     }
@@ -44,7 +43,6 @@ const postData = async (endpoint, data, options = {}) => {
   try {
     const res = await fetch(url, finalOptions);
     if (!res.ok) {
-      // Hata detaylarını yakalamak
       const errorDetail = await res.text();
       throw new Error(`Error: ${res.status} ${res.statusText} - ${errorDetail}`);
     }

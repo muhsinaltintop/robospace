@@ -107,13 +107,18 @@ const Footer = () => {
               </div>
 
               <div>
-                <p className="font-medium text-gray-900">Odaksan</p>
+                <p className="font-medium text-gray-900">
+                  <Link href="https://www.odaksan.com/" target="_blank" >
+                  Odaksan
+                  </Link>
+                  </p>
 
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
                     <Link
-                      href="#"
+                      href="https://www.odaksan.com/hakkimda#odaksan"
                       className="text-gray-700 transition hover:opacity-75"
+                      target="_blank" 
                     >
                       Hakkımızda
                     </Link>
@@ -121,8 +126,9 @@ const Footer = () => {
 
                   <li>
                     <Link
-                      href="#"
+                      href="https://www.odaksan.com/urunler-kategori/strecleme-makinalari"
                       className="text-gray-700 transition hover:opacity-75"
+                      target="_blank" 
                     >
                       Streç Makinası
                     </Link>
@@ -130,8 +136,9 @@ const Footer = () => {
 
                   <li>
                     <Link
-                      href="#"
+                      href="https://www.odaksan.com/referanslar"
                       className="text-gray-700 transition hover:opacity-75"
+                      target="_blank" 
                     >
                       Referanslarımız
                     </Link>
@@ -145,25 +152,25 @@ const Footer = () => {
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
                     <Link
-                      href="#"
+                      href="/iletisim"
                       className="text-gray-700 transition hover:opacity-75"
                     >
                       İletişim
                     </Link>
                   </li>
 
-                  <li>
+                  {/* <li>
                     <Link
                       href="#"
                       className="text-gray-700 transition hover:opacity-75"
                     >
                       SSS
                     </Link>
-                  </li>
+                  </li> */}
 
                   <li>
                     <Link
-                      href="#"
+                      href="/iletisim"
                       className="text-gray-700 transition hover:opacity-75"
                     >
                       Demo Talebi
