@@ -1,6 +1,20 @@
 import Image from 'next/image';
 import blogData from '@/public/_mocks_/blogEntries.json'; // JSON'u doğrudan import et
 
+export async function generateMetadata({params}){
+
+  const blogHeader = params.blogHeader
+  .split('-')
+  .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+  .join(' ');
+
+  return {
+    title: blogHeader,
+  }
+  
+
+}
+
 // BlogPage Component
 export default function BlogPage({ params }) {
   const blog = getBlogData(params.blogHeader);

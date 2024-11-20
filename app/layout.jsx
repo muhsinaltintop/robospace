@@ -11,9 +11,9 @@ export const metadata  = {
   },
   description: "Güneş Panel Temizleme Robotu, Güneş Paneli yıkama Makinası, GES temizlik Robotu,  panel temizleme Robotu",
   keywords: ['Güneş Panel Temizleme Robotu', 'Güneş Paneli Yıkama Makinası', 'GES Temizlik Robotu',  'Panel Temizleme Robotu'],
-  twitter: {
-    card: "summary_"
-  }
+  // twitter: {
+  //   card: "summary_"
+  // }
 };
 
 export default function RootLayout({ children }) {
