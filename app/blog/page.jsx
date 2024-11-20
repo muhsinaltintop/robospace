@@ -1,5 +1,4 @@
 import React from 'react'
-import robots from '../robots';
 export const metadata  = {
   title: "Blog",
   description: "Güneş Paneli Temizleme Robotları Hakkında Merak Ettikleriniz",

@@ -11,6 +11,8 @@ export async function generateMetadata({params}){
 
   return {
     title: productName,
+    description: `Odaksan ${productName} Solar Paneli Temizleme Robotu`,
+    keywords: [ `${productName}`, 'Solar Panel', 'Temizlik Robotu', 'Güneş Enerjisi' ]
   }
   
 

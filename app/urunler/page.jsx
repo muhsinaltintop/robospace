@@ -3,7 +3,7 @@ import Products from '../_components/Products'
 export const metadata  = {
   title: "Ürünler",
   description: "Güneş Paneli Temizleme Robotları Çeşitleri",
-  keywords: ['Çift Fırçalı Güneş Panel Temizleme Robotu', 'Tek Fırçalı Güneş Paneli Yıkama Makinası', 'GES Temizlik Robotu Çeşitleri',  'Panel Temizleme Robotları'],
+  keywords: ['Güneş', 'panel', 'temizlik', 'temizleme', 'robot', 'makine', 'solar', 'ges2'],
 };
 
 const page = () => {
