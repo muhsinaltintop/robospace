@@ -6,8 +6,9 @@ import Footer from "./_components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "RoboSpace Solar Panel Yıkama Robotu",
-  description: "Temiz enerji için temiz güneş panelleri",
+  title: "Güneş Panel Temizleme Robotu - RoboSpace",
+  description: "Güneş Panel Temizleme Robotu, Güneş Paneli yıkama Makinası, GES temizlik Robotu,  panel temizleme Robotu",
+  keywords: ['Güneş Panel Temizleme Robotu', 'Güneş Paneli Yıkama Makinası', 'GES Temizlik Robotu',  'Panel Temizleme Robotu'],
 };
 
 export default function RootLayout({ children }) {

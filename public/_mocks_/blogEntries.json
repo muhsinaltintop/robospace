@@ -1,0 +1,21 @@
+{
+  "blogs": [
+    {
+      "slug": "gunes-paneli-temizligi-rehberi",
+      "title": "Güneş Paneli Temizliği Rehberi: Verimliliği Artırmak İçin Doğru Teknikler",
+      "image": "/images/solar-panel-cleaning-robot.jpg",
+      "content": [
+        "Güneş panelleri, temiz enerji üretimi için önemli bir yatırımdır. Ancak, panellerin maksimum performansta çalışmaya devam etmesi için düzenli temizlik şarttır. Zamanla toz, kir, kuş pislikleri ve diğer kalıntılar panellerin üzerine birikerek verimliliği azaltabilir. Güneş panelleri temizlerken dikkat edilmesi gereken başlıca noktalar şunlardır:",
+        "These robots use a combination of brushes, air blowers, and sometimes waterless cleaning technology to remove dirt and debris. They are designed to work autonomously and are powered by their own small solar panels, making them energy efficient.",
+        "One of the key advantages of these robots is that they can clean panels in remote locations without the need for human intervention, which can be costly and time-consuming.",
+        "Solar panel cleaning robots are essential for maintaining the efficiency of large-scale solar farms. As solar energy continues to grow in importance, these robots help ensure that solar panels are operating at their peak performance, reducing energy loss and maximizing output."
+      ],
+      "points": [
+        "Increases panel efficiency by removing dust and debris",
+        "Reduces the need for human labor in remote areas",
+        "Energy-efficient, using their own solar power",
+        "Environmentally friendly with waterless cleaning technology"
+      ]
+    }
+  ]
+}

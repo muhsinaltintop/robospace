@@ -23,7 +23,7 @@ const Product = ({ image, name, detay }) => {
           width={600}
         />
         <div className="relative border border-gray-100 bg-white p-2 md:p-4">
-          <span className="whitespace-nowrap bg-primary text-white px-3 py-1.5 text-xs font-medium">New</span>
+          <span className="whitespace-nowrap bg-primary text-white px-3 py-1.5 text-xs font-medium">Yeni</span>
           <h3 className="mt-2 text-sm md:text-lg font-medium text-gray-900">{name}</h3>
           <p className="mt-1 text-xs md:text-sm text-gray-700">{detay}</p>
           <form className="mt-2">
