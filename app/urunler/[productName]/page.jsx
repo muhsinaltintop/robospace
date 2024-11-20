@@ -1,22 +1,27 @@
-"use client"
 import Image from 'next/image';
 import BreadCrum from '../../_components/BreadCrum';
-import SideMenu from '../../_components/SideMenu';
 import React from 'react';
-import { useRouter } from 'next/navigation';
 import products from '../../../public/products';
+
+export async function generateMetadata({params}){
+
+  const productName = params.productName.split('-')
+  .map(word => word.toUpperCase())
+  .join(' ');
+
+  return {
+    title: productName,
+  }
+  
+
+}
 
 const Page = ({params}) => {
 
   const productName = params.productName.split('-')
   .map(word => word.toUpperCase())
   .join(' ');
-  
-  const router = useRouter();
-  
-  const handleClick = (url) => {
-    router.push(url);
-  };
+ 
 
   function findProductByName(name) {
     let foundProduct = null;
@@ -30,19 +35,18 @@ const Page = ({params}) => {
   
   const searchResult = findProductByName(productName);
 
+  
+
   return (
     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
       <div className="mt-10 sm:mt-20">
         <BreadCrum productName={productName}/>
       </div>  
       <div className="flex flex-col lg:flex-row mt-10">
-        <div className="lg:w-1/4">
-          <SideMenu variation="products" link={params.productName} onMenuClick={handleClick} />
-        </div>
+        
         <div className="lg:w-3/4 lg:ml-10">
           <h2 className="text-xl font-bold text-primary mb-4">RoboSpace {searchResult.productName} Panel Yıkama Robotu</h2>
 
-          {/* Görseli mobilde başlığın hemen altına taşıyoruz */}
           <div className="block lg:hidden mb-6">
             <Image 
               src="/pro-75-90-860-500.png" 
