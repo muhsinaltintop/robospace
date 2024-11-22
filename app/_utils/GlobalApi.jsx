@@ -68,8 +68,8 @@ const getAllProducts = async () => {
   return data.data
 }
 
-const getSingleProduct = async (title) => {
-  const data = await fetchData(`/products?filters[title][$eq]=${title}&populate=*`)
+const getSingleProduct = async (slug) => {
+  const data = await fetchData(`/products?filters[slug][$eq]=${slug}&populate=*`)
   return data.data[0]
 }
 

@@ -2,6 +2,7 @@ import Image from 'next/image';
 import BreadCrum from '../../_components/BreadCrum';
 import React from 'react';
 import products from '../../../public/products';
+import { getSingleProduct } from '@/app/_utils/GlobalApi';
 
 
 export async function generateMetadata({params}){
