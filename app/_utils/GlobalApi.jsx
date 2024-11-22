@@ -63,4 +63,9 @@ const createInquri = async (inquriData) => {
   }
 };
 
-export { fetchData, postData, createInquri };
+const getAllProducts = async () => {
+  const data = await fetchData("/products?populate=*")
+  return data.data
+}
+
+export { createInquri, getAllProducts };

@@ -3,6 +3,7 @@ import BreadCrum from '../../_components/BreadCrum';
 import React from 'react';
 import products from '../../../public/products';
 
+
 export async function generateMetadata({params}){
 
   const productName = params.productName.split('-')
