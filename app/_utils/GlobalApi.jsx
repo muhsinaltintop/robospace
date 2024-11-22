@@ -68,4 +68,10 @@ const getAllProducts = async () => {
   return data.data
 }
 
-export { createInquri, getAllProducts };
+const getSingleProduct = async (title) => {
+  const data = await fetchData(`/products?filters[title][$eq]=${title}&populate=*`)
+  return data.data[0]
+}
+
+
+export { createInquri, getAllProducts, getSingleProduct };
