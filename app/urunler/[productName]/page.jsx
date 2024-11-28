@@ -1,15 +1,12 @@
 import Image from 'next/image';
 import BreadCrum from '../../_components/BreadCrum';
 import React from 'react';
-import products from '../../../public/products';
 import { getSingleProduct } from '@/app/_utils/GlobalApi';
 
 
 export async function generateMetadata({params}){
 
   const singleProduct = await getSingleProduct(params.productName)
-
-  console.log("trial:", singleProduct.attributes.featuredImage.data.attributes.url);
 
   return {
     title: singleProduct.attributes.seoTitle,
@@ -23,7 +20,6 @@ export async function generateMetadata({params}){
 const Page = async ({params}) => {
 
   const singleProduct = await getSingleProduct(params.productName)
-  console.log("sP:", singleProduct);
   
 
   return (
@@ -48,7 +44,9 @@ const Page = async ({params}) => {
 
           <div className="flex flex-col lg:flex-row">
             <div className="lg:w-1/2 mb-6 lg:mb-0">
-              <p className="text-justify">{singleProduct.attributes.productDetails}</p>
+              {console.log(singleProduct.attributes.productDetails)}
+              
+              {/* <p className="text-justify">{singleProduct.attributes.productDetails}</p> */}
               <div className="mt-4">
               </div>
             </div>
