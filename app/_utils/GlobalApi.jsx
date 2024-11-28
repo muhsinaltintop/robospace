@@ -69,7 +69,10 @@ const getAllProducts = async () => {
 }
 
 const getSingleProduct = async (slug) => {
+  console.log("slug:", slug);
+  
   const data = await fetchData(`/products?filters[slug][$eq]=${slug}&populate=*`)
+  
   return data.data[0]
 }
 

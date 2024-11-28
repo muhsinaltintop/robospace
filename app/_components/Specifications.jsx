@@ -14,7 +14,7 @@ const Specifications = () => {
           </h2>
 
           <p className="mt-4 text-gray-300 text-justify">
-          Gelişmiş teknolojisi ve üstün mühendislik çözümleriyle tasarlanan solar panel temizlik robotu, verimliliğinizi artırmak ve operasyonel maliyetlerinizi düşürmek için ideal bir çözümdür. Hafif ve dayanıklı yapısından hassas temizleme fırçalarına kadar her detayıyla profesyonel ihtiyaçlarınızı karşılayacak şekilde üretilen bu robot, en zorlu koşullarda dahi sorunsuz çalışarak uzun ömürlü kullanım sunar. Yüksek performansı, kullanıcı dostu kontrol özellikleri ve uzun süreli batarya kapasitesi sayesinde temizlik operasyonlarınızı en üst düzeye çıkarın.
+          Gelişmiş teknolojisi ve üstün mühendislik çözümleriyle tasarlanan güneş paneli temizlik makinası, verimliliğinizi artırmak ve operasyonel maliyetlerinizi düşürmek için ideal bir çözümdür. Hafif ve dayanıklı yapısından hassas temizleme fırçalarına kadar her detayıyla profesyonel ihtiyaçlarınızı karşılayacak şekilde üretilen bu robot, en zorlu koşullarda dahi sorunsuz çalışarak uzun ömürlü kullanım sunar. Yüksek performansı, kullanıcı dostu kontrol özellikleri ve uzun süreli batarya kapasitesi sayesinde temizlik operasyonlarınızı en üst düzeye çıkarın.
           </p>
         </div>
 
@@ -25,10 +25,10 @@ const Specifications = () => {
             </span>
 
             <div>
-              <h2 className="text-lg font-bold">Hafif Alüminyum Gövde</h2>
+              <h2 className="text-lg font-bold">Hafif Alüminyum Gövdeli Güneş Enerjisi Temizleme Makinesi</h2>
 
               <p className="mt-1 text-sm text-gray-300 text-justify">
-              Solar temizleme robotu, dayanıklı ve hafif alüminyum gövdesi sayesinde hem kolay taşınabilir hem de yüksek manevra kabiliyetine sahiptir. Paslanmaya karşı dirençli yapısıyla uzun ömürlü kullanım sunar, böylece bakım maliyetlerinizi minimuma indirir.
+              <span className="font-bold">Solar temizleme makinesi</span>, dayanıklı ve hafif alüminyum gövdesi sayesinde hem kolay taşınabilir hem de yüksek manevra kabiliyetine sahiptir. Paslanmaya karşı dirençli yapısıyla uzun ömürlü kullanım sunar, böylece bakım maliyetlerinizi minimuma indirir.
               </p>
             </div>
           </div>
@@ -39,7 +39,7 @@ const Specifications = () => {
             </span>
 
             <div>
-              <h2 className="text-lg font-bold">Elektrostatik Boya</h2>
+              <h2 className="text-lg font-bold">Elektrostatik Boyalı Solar Panel Yıkama Makinası</h2>
 
               <p className="mt-1 text-sm text-gray-300 text-justify">
               Elektrostatik kaplama teknolojisi, robotun yüzeyinde üstün koruma sağlar ve çevresel koşullara karşı dayanıklılığı artırır. Bu özel kaplama, UV ışınlarına, yağmur ve toza karşı ekstra koruma sunarak cihazın ömrünü uzatır.
@@ -56,7 +56,7 @@ const Specifications = () => {
               <h2 className="text-lg font-bold">50cm Aralığa Kadar Panelden Panele Geçişlere Uygun Mekanik Yapı</h2>
 
               <p className="mt-1 text-sm text-gray-300 text-justify">
-              50 cm aralığa kadar esnek mekanik yapısıyla solar temizleme robotu, panelden panale rahatça geçebilir. Bu özelliği sayesinde temizlik işlemleri daha hızlı ve verimli bir şekilde gerçekleşir.
+              50 cm aralığa kadar esnek mekanik yapısıyla <span className="font-bold">solar temizleme makinesi</span>solar temizleme makinesi, panelden panale rahatça geçebilir. Bu özelliği sayesinde temizlik işlemleri daha hızlı ve verimli bir şekilde gerçekleşir.
               </p>
             </div>
           </div>
@@ -121,7 +121,7 @@ const Specifications = () => {
             </span>
 
             <div>
-              <h2 className="text-lg font-bold">Silikon Palet Yapısı ile Panellere Daha Yumuşak</h2>
+              <h2 className="text-lg font-bold">Silikon Paletli Güneş Paneli Yıkama Makinesi</h2>
 
               <p className="mt-1 text-sm text-gray-300 text-justify">
               Silikon paletler, panellere daha yumuşak temas ederek aşınma ve hasar riskini minimuma indirir. Bu palet yapısı, yüksek performanslı temizlik sağlarken panellerin ömrünü de uzatır.

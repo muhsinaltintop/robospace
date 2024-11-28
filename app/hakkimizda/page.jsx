@@ -3,8 +3,8 @@ import ContentRenderer from './ContentRenderer'
 
 export const metadata  = {
   title: "Hakkımızda",
-  description: "Güneş Panel Temizleme Robotu Hakkında",
-  keywords: ['Güneş Panel Temizleme Robotu', 'Güneş Paneli Yıkama Makinası', 'GES Temizlik Robotu',  'Panel Temizleme Robotu'],
+  description: "Güneş Paneli Temizleme Robotu Hakkında",
+  keywords: ['Güneş Paneli Temizleme Robotu', 'Güneş Paneli Yıkama Makinası', 'GES Temizlik Robotu',  'Panel Temizleme Robotu'],
 };
 
 const page = () => {
