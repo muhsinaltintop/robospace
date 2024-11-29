@@ -9,7 +9,7 @@ export const AboutOdaksan = () => {
   
         <div className="w-full md:w-3/4 lg:w-1/2 h-64 md:h-80 lg:h-96 overflow-hidden rounded-lg mt-6">
           <Image
-            src="/odaksan-fabrika.jpg"
+            src="/odaksan-fabrika-2.png"
             width={800}
             height={300}
             alt="Odaksan Fabrika"
