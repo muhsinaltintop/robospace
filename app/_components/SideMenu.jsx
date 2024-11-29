@@ -167,7 +167,7 @@ const SideMenu = ({ onMenuClick, variation }) => {
                   <span>
                   RoboSpace ADV 120 
                   </span>
-                  <span className="ml-2"><Image src="/adv-120.png" width="40" height="20" alt="Solar Panel Yıkama Robotu"/> </span>
+                  <span className="ml-2"><Image src="/adv-120-2.png" width="40" height="20" alt="Solar Panel Yıkama Robotu"/> </span>
                   </div>
                 </button>
               </li>
@@ -180,7 +180,7 @@ const SideMenu = ({ onMenuClick, variation }) => {
                   <span>
                   RoboSpace ADV 80
                   </span>
-                  <span className="ml-2"><Image src="/adv-80.png" width="40" height="20" alt="Solar Panel Yıkama Robotu"/> </span>
+                  <span className="ml-2"><Image src="/adv-80-2.png" width="40" height="20" alt="Solar Panel Yıkama Robotu"/> </span>
                   </div>
                 </button>
               </li>

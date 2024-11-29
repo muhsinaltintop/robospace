@@ -15,7 +15,7 @@ const ContactLeft = () => {
         alt="robospace"
         height="564"
         width="846"
-        src="/robot-bg.webp"
+        src="/robot-bg.png"
         className="absolute inset-0 h-full w-full object-cover opacity-50"
       />
 
