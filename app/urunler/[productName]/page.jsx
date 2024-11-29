@@ -2,6 +2,7 @@ import Image from 'next/image';
 import BreadCrum from '../../_components/BreadCrum';
 import React from 'react';
 import { getSingleProduct } from '@/app/_utils/GlobalApi';
+import { BlocksRenderer } from '@strapi/blocks-react-renderer';
 
 
 export async function generateMetadata({params}){
@@ -44,9 +45,7 @@ const Page = async ({params}) => {
 
           <div className="flex flex-col lg:flex-row">
             <div className="lg:w-1/2 mb-6 lg:mb-0">
-              {console.log(singleProduct.attributes.productDetails)}
-              
-              {/* <p className="text-justify">{singleProduct.attributes.productDetails}</p> */}
+              <BlocksRenderer content={singleProduct.attributes.productDetails}/>
               <div className="mt-4">
               </div>
             </div>
