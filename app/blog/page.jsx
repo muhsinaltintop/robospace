@@ -63,9 +63,6 @@ const page = () => {
             <p>Eğer solar panellerinizi etkili ve zahmetsiz bir şekilde temizlemek istiyorsanız, <a href="#" title="Odaksan Robospace">Odaksan Robospace ürünlerini hemen inceleyin</a>. Robotik temizlik teknolojilerimizle tanışın ve enerji geleceğinizi güvence altına alın!</p>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2024 Odaksan Robospace. Tüm hakları saklıdır.</p>
-    </footer>
 </div>
   )
 }
