@@ -9,7 +9,7 @@ export const metadata  = {
   title: {default: "Güneş Paneli Temizleme Robotu - RoboSpace",
     template: "%s - Güneş Paneli Temizleme Robotu - RoboSpace"
   },
-  description: "Güneş Paneli Temizleme Robotu, Güneş Paneli yıkama Makinası, GES temizlik Robotu,  panel temizleme Robotu",
+  description: "Güneş Paneli Temizleme Robotu, Güneş Paneli yıkama Makinesi, GES Temizlik Robotu, Solar Panel Yıkama Robotu",
   keywords: ['Güneş Paneli Temizleme Robotu', 'Güneş Paneli Yıkama Makinası', 'GES Temizlik Robotu',  'Panel Temizleme Robotu'],
   // twitter: {
   //   card: "summary_"
