@@ -8,7 +8,7 @@ const Slider = () => {
       <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
         <div className="max-w-xl text-left">
           <h1 className="text-white text-3xl font-extrabold sm:text-5xl">
-            Türkiye&apos;nin Solar Panel Yıkama Robotu
+            Türkiye&apos;nin Güneş Panel Temizleme Robotu
             <strong className="pl-2 ml-2 block font-extrabold text-primary bg-white w-6/12 pt-2 pb-4 mt-2 bg-opacity-40 items-left justify-left">
               RoboSpace
             </strong>

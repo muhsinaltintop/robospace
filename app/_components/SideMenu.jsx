@@ -128,7 +128,7 @@ const SideMenu = ({ onMenuClick, variation }) => {
                   <span>
                   RoboSpace PRO 120 
                   </span>
-                  <span className="ml-2"><Image src="/pro-120-860-500.png" width="40" height="20" alt="Solar Panel Yıkama Robotu"/> </span>
+                  <span className="ml-2"><Image src="/pro-120-860-500.png" width="40" height="20" alt="Solar Panel Temzileme Makinesi"/> </span>
                   </div>
                 </button>
               </li>
@@ -141,7 +141,7 @@ const SideMenu = ({ onMenuClick, variation }) => {
                   <span>
                   RoboSpace PRO 90 
                   </span>
-                  <span className="ml-2"><Image src="/pro-75-90-860-500.png" width="40" height="20" alt="Solar Panel Yıkama Robotu"/> </span>
+                  <span className="ml-2"><Image src="/pro-75-90-860-500.png" width="40" height="20" alt="Solar Panel Temizleme Makinesi"/> </span>
                   </div>
                 </button>
               </li>
@@ -154,7 +154,7 @@ const SideMenu = ({ onMenuClick, variation }) => {
                   <span>
                   RoboSpace PRO 75
                   </span>
-                  <span className="ml-2"><Image src="/pro-120-860-500.png" width="40" height="20" alt="Solar Panel Yıkama Robotu"/> </span>
+                  <span className="ml-2"><Image src="/pro-120-860-500.png" width="40" height="20" alt="Solar Panel Temizleme Robotu"/> </span>
                   </div>
                 </button>
               </li>
