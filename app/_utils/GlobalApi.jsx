@@ -75,5 +75,18 @@ const getSingleProduct = async (slug) => {
   return data.data[0]
 }
 
+const getAllBlogs = async () => {
+  const data = await fetchData('/blogs?populate=*')
+  console.log("allBlogs:", data);
+  
+  return data;
+}
 
-export { createInquri, getAllProducts, getSingleProduct };
+const getSingleBlog = async (id) => {
+  const data = await fetchData(`/blogs/${id}?populate=*`)
+  console.log("allBlogs:", data);
+  
+  return data;
+}
+
+export { createInquri, getAllProducts, getSingleProduct, getAllBlogs, getSingleBlog };
