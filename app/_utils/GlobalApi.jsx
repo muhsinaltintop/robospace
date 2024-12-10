@@ -81,8 +81,8 @@ const getAllBlogs = async () => {
   return data.data;
 }
 
-const getSingleBlog = async (id) => {
-  const data = await fetchData(`/blogs/${id}?populate=*`)
+const getSingleBlog = async (slug) => {
+  const data = await fetchData(`/blogs?filters[slug][$eq]=${slug}&populate=*`)
   console.log("allBlogs:", data);
   
   return data;

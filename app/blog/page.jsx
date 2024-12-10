@@ -14,6 +14,7 @@ const Page = async () => {
   return (
     
           <div>
+            {console.log("aB:", allBlogs)}
             <h1 className='text-center text-xl font-bold'>Blog Yazıları...</h1>
             <div className="grid grid-cols-3 gap-2 p-2">
               {allBlogs.map((blog) => (
