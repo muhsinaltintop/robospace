@@ -77,9 +77,8 @@ const getSingleProduct = async (slug) => {
 
 const getAllBlogs = async () => {
   const data = await fetchData('/blogs?populate=*')
-  console.log("allBlogs:", data);
   
-  return data;
+  return data.data;
 }
 
 const getSingleBlog = async (id) => {
