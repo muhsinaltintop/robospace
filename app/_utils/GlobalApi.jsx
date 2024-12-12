@@ -83,9 +83,8 @@ const getAllBlogs = async () => {
 
 const getSingleBlog = async (slug) => {
   const data = await fetchData(`/blogs?filters[slug][$eq]=${slug}&populate=*`)
-  console.log("allBlogs:", data);
   
-  return data;
+  return data.data;
 }
 
 export { createInquri, getAllProducts, getSingleProduct, getAllBlogs, getSingleBlog };
