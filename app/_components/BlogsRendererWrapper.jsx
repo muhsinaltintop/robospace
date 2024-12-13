@@ -11,10 +11,10 @@ const BlocksRendererWrapper = ({ content }) => {
         heading: ({ children, level }) => {
           const HeadingTag = `h${level}`;
           const headingStyles = {
-            1: 'text-3xl font-extrabold text-red-500',
+            1: 'text-3xl font-extrabold',
             2: 'text-xl font-bold',
-            3: 'text-l font-semibold text-green-500',
-            4: 'text-l font-medium text-purple-500',
+            3: 'text-l font-semibold',
+            4: 'text-l font-medium',
           };
           return (
             <HeadingTag className={headingStyles[level] || 'text-xl font-medium'}>
